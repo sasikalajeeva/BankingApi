@@ -21,10 +21,10 @@
 
         @PostMapping
         public Account addAccount(@RequestBody Account account) {
-           /* System.out.println("Inside create account-->" +account.getAccountType());
+            System.out.println("Inside create account-->" +account.getAccountType());
             System.out.println("Inside create account-->" +account.getBalance());
             System.out.println("Inside create account-->" +account.getStatus());
-            System.out.println("Inside create account-->" +account.getCustomerName());*/
+            System.out.println("Inside create account-->" +account.getCustomerName());
             return service.createAccount(account);
         }
         /*public ResponseEntity<Account> addAccount(@RequestBody Account account){
